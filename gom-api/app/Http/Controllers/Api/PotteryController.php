@@ -28,12 +28,13 @@ class PotteryController extends Controller
         $fullPath = storage_path('app/public/' . $path);
 
         $model = $request->input('model', 'gemini');
+        $pythonAiUrl = rtrim((string) env('PYTHON_AI_URL', 'http://127.0.0.1:8001'), '/');
 
         $response = Http::timeout(60)->attach(
             'file',
             file_get_contents($fullPath),
             basename($fullPath)
-        )->post('http://127.0.0.1:8001/predict?model=' . urlencode($model));
+        )->post($pythonAiUrl . '/predict?model=' . urlencode($model));
 
         if (!$response->successful()) {
             Storage::disk('public')->delete($path);

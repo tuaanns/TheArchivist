@@ -4,13 +4,14 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\CeramicLine;
+use App\Traits\ApiResponses;
 use Illuminate\Http\Request;
 
 class CeramicLineController extends Controller
 {
-    /**
-     * Lấy danh sách dòng gốm (có phân trang, lọc, tìm kiếm)
-     */
+    use ApiResponses;
+
+    // Lấy danh sách dòng gốm (phân trang, lọc, tìm kiếm)
     public function index(Request $request)
     {
         $query = CeramicLine::query();
@@ -38,21 +39,13 @@ class CeramicLineController extends Controller
 
         $ceramics = $query->orderByDesc('is_featured')->orderBy('name')->get();
 
-        return response()->json([
-            'status' => 'success',
-            'data' => $ceramics,
-        ]);
+        return $this->ok($ceramics, 'OK', ['total' => $ceramics->count()]);
     }
 
-    /**
-     * Chi tiết một dòng gốm
-     */
+    // Chi tiết một dòng gốm
     public function show($id)
     {
         $ceramic = CeramicLine::findOrFail($id);
-        return response()->json([
-            'status' => 'success',
-            'data' => $ceramic,
-        ]);
+        return $this->ok($ceramic);
     }
 }

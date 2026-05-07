@@ -1,0 +1,426 @@
+{
+  "app": {
+    "name": "The Archivist",
+    "tagline": "AI Multi-Agent Debate cho Gốm sứ Việt Nam"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "saving": "Đang lưu...",
+    "submitting": "Đang xử lý...",
+    "search": "Tìm kiếm",
+    "save": "Lưu",
+    "cancel": "Huỷ",
+    "confirm": "Xác nhận",
+    "close": "Đóng",
+    "back": "Quay lại",
+    "next": "Tiếp",
+    "edit": "Chỉnh sửa",
+    "delete": "Xoá",
+    "view": "Xem",
+    "viewAll": "Xem tất cả",
+    "viewDetail": "Xem chi tiết",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "yes": "Có",
+    "no": "Không",
+    "all": "Tất cả",
+    "empty": "Chưa có dữ liệu",
+    "error": "Đã có lỗi xảy ra",
+    "retry": "Thử lại",
+    "more": "Thêm",
+    "select": "Chọn",
+    "language": "Ngôn ngữ",
+    "theme": "Giao diện",
+    "light": "Sáng",
+    "dark": "Tối",
+    "system": "Hệ thống"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "lines": "Dòng gốm",
+    "history": "Lịch sử",
+    "contact": "Liên hệ",
+    "about": "Về chúng tôi",
+    "profile": "Hồ sơ",
+    "transactions": "Giao dịch",
+    "payment": "Nạp lượt",
+    "logout": "Đăng xuất",
+    "admin": "Khu vực Admin",
+    "terms": "Điều khoản",
+    "privacy": "Bảo mật"
+  },
+  "header": {
+    "myProfile": "Hồ sơ của tôi",
+    "transactionHistory": "Lịch sử giao dịch",
+    "topup": "Nạp lượt phân tích",
+    "topupShort": "Nạp lượt",
+    "noQuota": "Hết lượt",
+    "freeQuota": "Lượt miễn phí",
+    "paidQuota": "Lượt đã nạp"
+  },
+  "auth": {
+    "loginTitle": "Đăng nhập",
+    "registerTitle": "Đăng ký",
+    "forgotTitle": "Quên mật khẩu?",
+    "resetTitle": "Đặt lại mật khẩu",
+    "name": "Họ và tên",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "passwordConfirm": "Xác nhận mật khẩu",
+    "newPassword": "Mật khẩu mới",
+    "code": "Mã xác minh",
+    "rememberMe": "Ghi nhớ đăng nhập",
+    "loginBtn": "Đăng nhập",
+    "registerBtn": "Đăng ký",
+    "sendCodeBtn": "Gửi mã",
+    "resetBtn": "Đặt lại",
+    "haveAccount": "Đã có tài khoản?",
+    "noAccount": "Chưa có tài khoản?",
+    "loginNow": "Đăng nhập ngay",
+    "registerNow": "Đăng ký ngay",
+    "forgotPassword": "Quên mật khẩu?",
+    "or": "Hoặc",
+    "loginGoogle": "Đăng nhập với Google",
+    "loginSuccess": "Đăng nhập thành công!",
+    "registerSuccess": "Đăng ký thành công!",
+    "logoutSuccess": "Đã đăng xuất.",
+    "codeSent": "Mã xác minh đã được gửi tới email.",
+    "resetSuccess": "Đã đặt lại mật khẩu thành công.",
+    "passwordMismatch": "Mật khẩu không trùng khớp.",
+    "fillAll": "Vui lòng điền đầy đủ thông tin."
+  },
+  "home": {
+    "heroTitle": "Khám phá di sản gốm sứ",
+    "heroEyebrow": "Tranh biện AI đa đại lý",
+    "heroPrefix": "Khám phá",
+    "heroRotatingWords": ["di sản", "tinh hoa", "kho tàng", "bảo vật"],
+    "heroSuffix": "gốm sứ",
+    "heroSubtitle": "Hệ thống AI đa đại lý phân tích chuyên sâu mọi cổ vật gốm sứ chỉ trong vài giây.",
+    "ctaUpload": "Tải ảnh phân tích",
+    "ctaExplore": "Khám phá dòng gốm",
+    "trust": {
+      "expert": "Giám định chuyên sâu",
+      "expertDesc": "Sử dụng mô hình AI được huấn luyện trên hàng ngàn hiện vật mẫu",
+      "secure": "Bảo mật hồ sơ",
+      "secureDesc": "Kết quả giám định được lưu trữ riêng tư và an toàn tuyệt đối",
+      "instant": "Kết quả tức thì",
+      "instantDesc": "Phân tích đa đại lý chỉ trong vài giây ngay sau khi tải ảnh"
+    },
+    "featured": {
+      "title": "Dòng gốm nổi bật",
+      "loading": "Đang tải dữ liệu tinh hoa..."
+    },
+    "3d": {
+      "eyebrow": "MẪU 3D TƯƠNG TÁC",
+      "title": "Khám phá mẫu gốm trong không gian 3D",
+      "description": "Xoay và phóng to mô hình gốm sứ minh họa để cảm nhận rõ hơn hình khối, bề mặt và họa tiết của hiện vật.",
+      "feature1": "Xoay 360°",
+      "feature1Desc": "Quan sát hình khối hiện vật từ nhiều góc nhìn.",
+      "feature2": "Phóng to chi tiết",
+      "feature2Desc": "Xem rõ bề mặt, màu men và hoa văn minh họa.",
+      "feature3": "Trưng bày trực quan",
+      "feature3Desc": "Tạo trải nghiệm khám phá sinh động hơn trên website.",
+      "hint": "Kéo để xoay • Cuộn để phóng to",
+      "screenshot": "Chụp ảnh",
+      "badge": "Interactive 3D",
+      "ctaExplore": "Khám phá dòng gốm",
+      "ctaAbout": "Về The Archivist"
+    }
+  },
+  "analysis": {
+    "title": "Giám định cổ vật",
+    "subtitle": "Tải ảnh hiện vật để khởi động hội đồng AI đa đại lý.",
+    "uploadHint": "Kéo thả hoặc bấm để chọn ảnh (JPG, PNG)",
+    "selectFile": "Chọn ảnh",
+    "changeFile": "Đổi ảnh",
+    "analyzeBtn": "Bắt đầu giám định",
+    "analyzing": "Hội đồng đang luận đàm...",
+    "noQuota": "Hết lượt giám định. Vui lòng nạp thêm!",
+    "needFile": "Vui lòng tải ảnh cổ vật lên trước khi giám định!",
+    "completeMsg": "Giám định hoàn tất!",
+    "result": {
+      "title": "Kết quả giám định",
+      "name": "Tên hiện vật",
+      "era": "Niên đại",
+      "origin": "Xuất xứ",
+      "confidence": "Độ tin cậy",
+      "certainty": "Mức chắc chắn",
+      "details": "Chi tiết phân tích",
+      "agents": "Hội đồng AI",
+      "debate": "Tranh biện",
+      "verdict": "Phán quyết",
+      "downloadReport": "Tải báo cáo",
+      "newAnalysis": "Phân tích mới",
+      "askAi": "Hỏi AI thêm"
+    },
+    "chat": {
+      "title": "Trợ lý AI gốm sứ",
+      "placeholder": "Hỏi gì cũng được...",
+      "send": "Gửi",
+      "thinking": "Đang suy nghĩ...",
+      "greeting": "Xin chào {{name}}.\nTôi là Trợ lý AI chuyên môn về gốm sứ. Bạn cần hỗ trợ gì?"
+    }
+  },
+  "ceramics": {
+    "title": "Bộ sưu tập dòng gốm",
+    "subtitle": "Khám phá tinh hoa các dòng gốm sứ truyền thống Việt Nam và thế giới.",
+    "searchPlaceholder": "Tìm theo tên, xuất xứ, phong cách...",
+    "filterCountry": "Quốc gia",
+    "filterAll": "Tất cả",
+    "featured": "Nổi bật",
+    "noResults": "Không tìm thấy dòng gốm phù hợp.",
+    "detail": {
+      "origin": "Xuất xứ",
+      "era": "Niên đại",
+      "country": "Quốc gia",
+      "style": "Phong cách",
+      "characteristics": "Đặc điểm",
+      "history": "Lịch sử",
+      "techniques": "Kỹ thuật chế tác"
+    }
+  },
+  "history": {
+    "title": "Lịch sử giám định",
+    "subtitle": "Toàn bộ phân tích AI bạn đã thực hiện.",
+    "empty": "Bạn chưa có lượt giám định nào.",
+    "startNow": "Bắt đầu giám định",
+    "table": {
+      "image": "Ảnh",
+      "name": "Tên",
+      "era": "Niên đại",
+      "confidence": "Độ tin cậy",
+      "date": "Ngày",
+      "actions": "Hành động"
+    },
+    "detail": {
+      "title": "Chi tiết giám định",
+      "uploadedAt": "Tải lên lúc",
+      "model": "Mô hình AI"
+    }
+  },
+  "profile": {
+    "title": "Hồ sơ của tôi",
+    "subtitle": "Quản lý thông tin tài khoản và bảo mật.",
+    "tabs": {
+      "info": "Thông tin",
+      "password": "Đổi mật khẩu",
+      "billing": "Tài khoản"
+    },
+    "fields": {
+      "name": "Họ tên",
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "avatar": "Ảnh đại diện",
+      "currentPassword": "Mật khẩu hiện tại",
+      "newPassword": "Mật khẩu mới",
+      "confirmPassword": "Xác nhận mật khẩu mới"
+    },
+    "save": "Lưu thay đổi",
+    "saved": "Cập nhật thành công!",
+    "passwordChanged": "Đổi mật khẩu thành công!"
+  },
+  "payment": {
+    "title": "Nạp Tín Dụng",
+    "subtitle": "Mở khóa toàn bộ khả năng phân tích đa đại lý của hệ thống.",
+    "steps": {
+      "package": "Chọn gói",
+      "method": "Phương thức",
+      "pay": "Thanh toán"
+    },
+    "credits": "Tín dụng",
+    "perCredit": "{{price}}đ / tín dụng",
+    "select": "Chọn gói",
+    "method": {
+      "title": "Phương thức thanh toán",
+      "vietqr": "Chuyển khoản Ngân hàng",
+      "vietqrSub": "Tự động duyệt qua VietQR",
+      "momo": "Ví điện tử MoMo",
+      "momoSub": "Thanh toán tức thì",
+      "zalopay": "Ví ZaloPay",
+      "zalopaySub": "Quét mã hoặc chuyển tức thì"
+    },
+    "qr": {
+      "title": "Quét mã VietQR",
+      "subtitle": "Sử dụng App Ngân hàng / MoMo",
+      "waiting": "Đang chờ giao dịch...",
+      "details": "Chi tiết thanh toán",
+      "bank": "Ngân hàng",
+      "account": "Số tài khoản",
+      "owner": "Chủ tài khoản",
+      "content": "Nội dung",
+      "confirm": "Xác nhận đã chuyển khoản",
+      "cancel": "Huỷ giao dịch",
+      "simulate": "Giả lập nạp tiền thành công (Test Mode)",
+      "warning": "Vui lòng giữ nguyên Nội dung chuyển khoản để hệ thống tự động cộng lượt ngay lập tức. Giao dịch sẽ hết hạn sau 10 phút."
+    },
+    "success": {
+      "title": "Thanh toán thành công!",
+      "msg": "Bạn đã nạp thành công bộ {{credits}} lượt phân tích vào tài khoản. Hãy bắt đầu giám định những cổ vật ngay bây giờ!"
+    },
+    "total": "Tổng thanh toán:",
+    "creating": "Đang tạo giao dịch...",
+    "scanInvite": "Xin mời quét mã QR để thanh toán!",
+    "checking": "Chưa nhận được thanh toán. Vui lòng thử lại sau 30s!",
+    "failed": "Hệ thống thanh toán đang gặp sự cố. Vui lòng thử lại sau!"
+  },
+  "transactions": {
+    "title": "Lịch sử giao dịch",
+    "subtitle": "Theo dõi toàn bộ giao dịch nạp tín dụng của bạn.",
+    "empty": "Chưa có giao dịch nào.",
+    "table": {
+      "id": "Mã GD",
+      "package": "Gói",
+      "amount": "Số tiền",
+      "credits": "Tín dụng",
+      "status": "Trạng thái",
+      "date": "Thời gian"
+    },
+    "status": {
+      "completed": "Thành công",
+      "pending": "Đang chờ",
+      "failed": "Thất bại"
+    }
+  },
+  "contact": {
+    "eyebrow": "The Archivist Concierge",
+    "title": "Liên hệ với chúng tôi",
+    "subtitle": "Chúng tôi luôn sẵn lòng lắng nghe và hỗ trợ bạn trong hành trình khám phá và bảo tồn di sản gốm sứ Việt Nam.",
+    "info": {
+      "email": "Email Hỗ Trợ",
+      "emailNote": "Phản hồi chi tiết trong vòng 24 giờ làm việc.",
+      "emailCta": "Gửi email ngay",
+      "phone": "Đường Dây Nóng",
+      "phoneNote": "Hỗ trợ trực tiếp từ Thứ 2 - Thứ 7, 8:00 - 17:30.",
+      "phoneCta": "Gọi trực tiếp",
+      "address": "Trụ Sở Chính",
+      "addressValue": "Cần Thơ, Việt Nam",
+      "addressNote": "Trung tâm điều hành và hỗ trợ khu vực Miền Tây.",
+      "addressCta": "Xem trên bản đồ"
+    },
+    "form": {
+      "title": "Gửi Yêu Cầu",
+      "subtitle": "Điền thông tin chi tiết bên dưới, đội ngũ tư vấn sẽ liên hệ lại với bạn sớm nhất có thể.",
+      "name": "Họ và tên *",
+      "namePh": "Nhập họ và tên của bạn",
+      "email": "Địa chỉ Email *",
+      "emailPh": "vi-du@email.com",
+      "subject": "Chủ đề cần hỗ trợ",
+      "subjectPh": "Góp ý, Giám định hiện vật, Hợp tác...",
+      "message": "Nội dung yêu cầu *",
+      "messagePh": "Mô tả chi tiết vấn đề bạn cần chúng tôi hỗ trợ...",
+      "submit": "Gửi yêu cầu ngay",
+      "sending": "Đang xử lý...",
+      "success": "Yêu cầu của bạn đã được tiếp nhận thành công!",
+      "error": "Vui lòng điền đầy đủ các trường bắt buộc (*)",
+      "fail": "Gửi tin nhắn thất bại. Vui lòng thử lại sau."
+    },
+    "system": {
+      "title": "Cam kết hệ thống",
+      "items": {
+        "ai": "Hội đồng AI giám định đa chiều",
+        "data": "Dữ liệu đối soát bảo tàng quốc gia",
+        "speed": "Phản hồi phân tích thời gian thực",
+        "global": "Hỗ trợ di sản văn hóa toàn cầu"
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi phổ biến",
+      "q1": "Hệ thống có bảo mật thông tin hiện vật không?",
+      "a1": "Chúng tôi cam kết bảo mật tuyệt đối mọi hình ảnh và dữ liệu hiện vật của người dùng thông qua mã hóa đầu cuối.",
+      "q2": "Tôi có thể nạp thêm lượt giám định bằng cách nào?",
+      "a2": "Bạn có thể truy cập mục 'Nạp lượt' trên thanh menu để chọn các gói giám định phù hợp với nhu cầu.",
+      "q3": "Làm sao để liên hệ hợp tác chuyên môn?",
+      "a3": "Vui lòng gửi email trực tiếp hoặc điền vào form liên hệ với chủ đề 'Hợp tác chuyên môn', chúng tôi sẽ phản hồi trong 48h."
+    }
+  },
+  "about": {
+    "eyebrow": "VỀ THE ARCHIVIST",
+    "title": "Lưu giữ tinh hoa di sản qua tăng kính trí tuệ nhân tạo",
+    "subtitle": "Chúng tôi tiên phong ứng dụng công nghệ AI đa đại lý học sâu để nhận diện, giám định và số hóa mọi dấu ấn của gốm sứ Việt Nam cùng tinh túy thế giới.",
+    "features": {
+      "accuracy": {
+        "title": "Độ chính xác vượt trội",
+        "desc": "Hệ thống quy tụ 5 hội đồng AI chuyên biệt đóng vai trò tranh biện trực tiếp trong thời gian thực, đảm bảo mọi phán đoán xuất xứ và niên đại đều dựa trên lập luận đa phương diện."
+      },
+      "data": {
+        "title": "Kho tàng Dữ liệu",
+        "desc": "Lưu trữ hơn 50.000 mẫu vân gốm, kiểu dáng và nước men trải dài từ các triều đại lịch sử phương Đông, giúp tối ưu hóa việc so khớp và định danh mọi hiện vật."
+      },
+      "community": {
+        "title": "Cộng đồng Sưu tầm",
+        "desc": "Xây dựng sân chơi tri thức cho giới mộ điệu, nhà khảo cổ và những chuyên gia gốm sứ. Không chỉ là nền tảng máy học, The Archivist còn là kho tàng sống của văn hóa dân tộc."
+      }
+    },
+    "mission": {
+      "title": "Tầm nhìn và Sứ mệnh",
+      "highlight": "Sứ mệnh",
+      "p1": "Chúng tôi tin rằng, mỗi cổ vật gốm sứ không chỉ đơn thuần là món đồ vô tri, mà ẩn chứa trong nó là cả câu chuyện của dòng thời gian, hồn phách vạn vật và tinh hoa đôi bàn tay nghệ nhân.",
+      "p2": "Sứ mệnh của The Archivist là kéo dài tuổi thọ của ký ức. Biến những câu chuyện ngỡ như đã chìm vào quên lãng trở nên sống động, bằng sự logic, minh bạch và năng lực phi thường của công nghệ. Chúng tôi hướng tới việc xây dựng một hệ sinh thái tri thức toàn cầu, nơi mọi người có thể tiếp cận, học hỏi và trân trọng di sản văn hóa gốm sứ từ khắp nơi trên thế giới.",
+      "stats1": "Bức ảnh phân tích",
+      "stats2": "Độ chính xác AI"
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Điều khoản dịch vụ",
+      "subtitle": "Bằng cách sử dụng The Archivist, bạn đồng ý với các điều khoản sau:",
+      "s1Title": "1. Quyết định giám định của AI",
+      "s1Body": "Tuy hệ thống sử dụng thuật toán trí tuệ nhân tạo (AI) học sâu đa đại lý với nguồn dữ liệu khổng lồ, mọi thông tin giám định do hệ thống xuất ra mang tính chất tham khảo. Kết quả của AI không thể thay thế cho đánh giá của cơ quan có thẩm quyền hoặc chuyên gia thẩm định trực tiếp trong các vấn đề liên quan tới pháp lý, chứng nhận và thương mại. Chấp nhận sử dụng hệ thống đồng nghĩa với việc bạn hiểu rõ mọi quyết định giao dịch hoàn toàn nằm trong quyền tài phán cá nhân của bạn.",
+      "s2Title": "2. Bản quyền và Dữ liệu",
+      "s2Body": "Bạn sở hữu độc quyền hình ảnh hiện vật tải lên. Tuy nhiên, bằng việc phân tích mẫu vật, bạn cấp cho chúng tôi quyền sử dụng hình ảnh ở dạng ẩn danh nhằm mục đích huấn luyện hệ thống AI ngày càng hoàn thiện hơn. Chúng tôi không sử dụng dữ liệu của bạn cho bất kì mục đích phân phối nào với bên thứ ba khác.",
+      "s3Title": "3. Tín dụng và Thanh toán",
+      "s3Body": "Tín dụng (lượt giám định) thuộc tài khoản của bạn không có thời hạn sử dụng. Các gói nạp một khi đã thực hiện thành công và cập nhật số dư cho tài khoản sẽ không được hoàn trả, trừ trường hợp giao dịch bị lỗi từ phía cổng thanh toán.",
+      "s4Title": "4. Trách nhiệm người dùng",
+      "s4Body": "Tài khoản chỉ được sử dụng và là tiện ích ưu đãi dành riêng cho cá nhân. Mọi hành vi tự động hóa hoặc thu thập thông tin ngược (API reverse engineering) trên hệ thống sẽ dẫn tới hành động khóa vĩnh viễn quyền truy cập."
+    },
+    "privacy": {
+      "title": "Chính sách bảo mật",
+      "subtitle": "Bảo mật thông tin của khách hàng là ưu tiên hàng đầu tại The Archivist",
+      "s1Title": "Thu thập Thông Tin Cá Nhân",
+      "s1Body": "Chúng tôi chỉ thu thập họ tên, địa chỉ email, và quá trình sử dụng (lịch sử phân tích hình ảnh) của bạn với mục tiêu xác định tính danh tính nhằm duy trì số lượng bộ tín dụng cho dịch vụ phân tích. Hình ảnh tải lên được mã hóa và bảo mật trên máy chủ biên phòng nội bộ của chúng tôi.",
+      "s2Title": "Sử Dụng Dữ Liệu",
+      "s2Items": [
+        "Xử lý các yêu cầu nhận diện và hội chẩn AI đa đại lý cho hiện vật gốm sứ.",
+        "Hiển thị nhật ký giám định trực tiếp trên giao diện cá nhân.",
+        "Thông báo tiến trình đơn hàng (các gói nạp tiền tín dụng).",
+        "Cải tiến trọng số hệ thống AI (bằng hình ảnh ẩn danh phi danh tính)."
+      ],
+      "s3Title": "Giao Dịch Thanh Toán",
+      "s3Body": "Chúng tôi không lưu trữ thông tin số thẻ hay bảo mật Internet Banking hay thông tin thẻ tín dụng của bạn. Mọi quá trình nạp tín dụng đều được giao dịch trên cổng thanh toán trung gian, tuân thủ tiêu chuẩn mã hoá PCI DSS cao nhất thông qua giao thức ngân hàng điện tử VietQR và MoMo.",
+      "s4Title": "Liên hệ và Giải quyết quyền lợi người dùng",
+      "s4Body": "Để yêu cầu xóa toàn bộ lịch sử tư liệu cá nhân, bao gồm các bài viết trên sổ nhật ký, hãy liên hệ tới The Archivist thông qua phần \"Liên hệ chuyên gia\" trên hệ thống. Dữ liệu của bạn sẽ bị hủy vĩnh viễn theo đúng yêu cầu bảo mật thông tin chuẩn GDPR của Liên Minh Châu Âu."
+    }
+  },
+  "admin": {
+    "title": "Bảng điều khiển Admin",
+    "subtitle": "Quản trị toàn bộ hệ thống The Archivist",
+    "tabs": {
+      "dashboard": "Tổng quan",
+      "users": "Người dùng",
+      "ceramics": "Dòng gốm",
+      "payments": "Giao dịch",
+      "predictions": "Phân tích"
+    },
+    "stats": {
+      "users": "Người dùng",
+      "predictions": "Lượt phân tích",
+      "ceramics": "Dòng gốm",
+      "revenue": "Doanh thu"
+    }
+  },
+  "footer": {
+    "company": "Công ty",
+    "product": "Sản phẩm",
+    "support": "Hỗ trợ",
+    "follow": "Theo dõi",
+    "rights": "© {{year}} The Archivist. Mọi quyền được bảo lưu."
+  },
+  "errors": {
+    "network": "Lỗi kết nối máy chủ",
+    "unauthorized": "Phiên đăng nhập đã hết hạn",
+    "forbidden": "Bạn không có quyền truy cập",
+    "notFound": "Không tìm thấy",
+    "server": "Lỗi máy chủ",
+    "validation": "Dữ liệu không hợp lệ"
+  }
+}

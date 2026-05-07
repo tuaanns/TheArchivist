@@ -3,32 +3,30 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\Contact\ContactSubmitRequest;
 use App\Mail\ContactMessage;
+use App\Traits\ApiResponses;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-    public function submit(Request $request)
-    {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'subject' => 'nullable|string|max:255',
-            'message' => 'required|string',
-        ]);
+    use ApiResponses;
 
-        $subject = $validated['subject'] ?: 'Không có chủ đề';
-        $validated['subject'] = $subject;
+    public function submit(ContactSubmitRequest $request): JsonResponse
+    {
+        $data = $request->validated();
+        $data['subject'] = $data['subject'] ?: 'Không có chủ đề';
 
         $targetEmail = env('MAIL_USERNAME', 'dongnguyenkh123@gmail.com');
 
         try {
-            Mail::to($targetEmail)->send(new ContactMessage($validated));
-            return response()->json(['success' => true, 'message' => 'Email sent successfully']);
-        } catch (\Exception $e) {
-            \Log::error('Mail sending failed: ' . $e->getMessage());
-            return response()->json(['success' => false, 'message' => 'Failed to send email: ' . $e->getMessage()], 500);
+            Mail::to($targetEmail)->send(new ContactMessage($data));
+            return $this->ok(null, 'Email sent successfully');
+        } catch (\Throwable $e) {
+            Log::error('Mail sending failed', ['error' => $e->getMessage()]);
+            return $this->serverError('Failed to send email. Please try again later.');
         }
     }
 }

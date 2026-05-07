@@ -26,21 +26,8 @@
     -->
     <title>THE ARCHIVIST WEB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <!-- Google Identity Services -->
+    <!-- Google Identity Services - Load script only, React will handle initialization -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script>
-      function onGoogleLibraryLoad() {
-        google.accounts.id.initialize({
-          client_id: "208231172368-34f26e0l7771ngcqa89j9ufj01gm6mtt.apps.googleusercontent.com",
-          callback: handleCredentialResponse
-        });
-      }
-      function handleCredentialResponse(response) {
-        // This will be called by App.js via a custom event
-        const event = new CustomEvent('google-login-success', { detail: response });
-        window.dispatchEvent(event);
-      }
-    </script>
   </head>
   <body>
     <!-- Facebook SDK -->

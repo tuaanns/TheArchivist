@@ -4,14 +4,21 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class AdminMiddleware
 {
-    public function handle(Request $request, Closure $next)
+    // Reject non-admin users with 403
+    public function handle(Request $request, Closure $next): Response
     {
-        if (!auth()->check() || !auth()->user()->isAdmin()) {
-            return response()->json(['message' => 'Bạn không có quyền truy cập chức năng này.'], 403);
+        if (!$request->user() || $request->user()->role !== 'admin') {
+            return response()->json([
+                'success' => false,
+                'message' => 'Unauthorized. Admin access required.',
+                'error_code' => 'FORBIDDEN'
+            ], 403);
         }
+
         return $next($request);
     }
 }

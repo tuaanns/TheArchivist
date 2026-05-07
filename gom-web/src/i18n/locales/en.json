@@ -1,0 +1,426 @@
+{
+  "app": {
+    "name": "The Archivist",
+    "tagline": "AI Multi-Agent Debate for Vietnamese Ceramics"
+  },
+  "common": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "submitting": "Submitting...",
+    "search": "Search",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "viewAll": "View all",
+    "viewDetail": "View detail",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "yes": "Yes",
+    "no": "No",
+    "all": "All",
+    "empty": "No data yet",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "more": "More",
+    "select": "Select",
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "nav": {
+    "home": "Home",
+    "lines": "Ceramic Lines",
+    "history": "History",
+    "contact": "Contact",
+    "about": "About",
+    "profile": "Profile",
+    "transactions": "Transactions",
+    "payment": "Top up",
+    "logout": "Log out",
+    "admin": "Admin Area",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "header": {
+    "myProfile": "My Profile",
+    "transactionHistory": "Transaction History",
+    "topup": "Top up credits",
+    "topupShort": "Top up",
+    "noQuota": "Out of quota",
+    "freeQuota": "Free quota",
+    "paidQuota": "Paid quota"
+  },
+  "auth": {
+    "loginTitle": "Sign in",
+    "registerTitle": "Sign up",
+    "forgotTitle": "Forgot password?",
+    "resetTitle": "Reset password",
+    "name": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "passwordConfirm": "Confirm password",
+    "newPassword": "New password",
+    "code": "Verification code",
+    "rememberMe": "Remember me",
+    "loginBtn": "Sign in",
+    "registerBtn": "Sign up",
+    "sendCodeBtn": "Send code",
+    "resetBtn": "Reset",
+    "haveAccount": "Already have an account?",
+    "noAccount": "Don't have an account?",
+    "loginNow": "Sign in now",
+    "registerNow": "Sign up now",
+    "forgotPassword": "Forgot password?",
+    "or": "Or",
+    "loginGoogle": "Continue with Google",
+    "loginSuccess": "Signed in!",
+    "registerSuccess": "Account created!",
+    "logoutSuccess": "Signed out.",
+    "codeSent": "Verification code sent to your email.",
+    "resetSuccess": "Password reset successfully.",
+    "passwordMismatch": "Passwords do not match.",
+    "fillAll": "Please fill in all fields."
+  },
+  "home": {
+    "heroTitle": "Discover ceramic heritage",
+    "heroEyebrow": "AI Multi-Agent Debate",
+    "heroPrefix": "Discover",
+    "heroRotatingWords": ["heritage", "masterpieces", "treasures", "artifacts"],
+    "heroSuffix": "ceramics",
+    "heroSubtitle": "Multi-agent AI system performs deep analysis on any ceramic artifact in seconds.",
+    "ctaUpload": "Upload to analyze",
+    "ctaExplore": "Explore lines",
+    "trust": {
+      "expert": "Expert appraisal",
+      "expertDesc": "Trained on thousands of curated artifact samples",
+      "secure": "Secure records",
+      "secureDesc": "Your analyses are stored privately and securely",
+      "instant": "Instant results",
+      "instantDesc": "Multi-agent debate completed within seconds"
+    },
+    "featured": {
+      "title": "Featured ceramic lines",
+      "loading": "Loading curated heritage..."
+    },
+    "3d": {
+      "eyebrow": "INTERACTIVE 3D SAMPLE",
+      "title": "Explore a ceramic sample in 3D space",
+      "description": "Rotate and zoom this illustrative ceramic model to better appreciate its shape, surface, and decorative details.",
+      "feature1": "360° Rotation",
+      "feature1Desc": "Observe the artifact's form from multiple viewpoints.",
+      "feature2": "Zoom Details",
+      "feature2Desc": "Examine surface, glaze and illustrative patterns clearly.",
+      "feature3": "Visual Showcase",
+      "feature3Desc": "Create a more vivid exploration experience on the website.",
+      "hint": "Drag to rotate • Scroll to zoom",
+      "screenshot": "Screenshot",
+      "badge": "Interactive 3D",
+      "ctaExplore": "Explore ceramics",
+      "ctaAbout": "About The Archivist"
+    }
+  },
+  "analysis": {
+    "title": "Artifact Appraisal",
+    "subtitle": "Upload an artifact image to launch the multi-agent AI council.",
+    "uploadHint": "Drag & drop or click to choose an image (JPG, PNG)",
+    "selectFile": "Choose image",
+    "changeFile": "Change image",
+    "analyzeBtn": "Start appraisal",
+    "analyzing": "Council is debating...",
+    "noQuota": "Out of credits. Please top up!",
+    "needFile": "Please upload an artifact image first!",
+    "completeMsg": "Appraisal complete!",
+    "result": {
+      "title": "Appraisal result",
+      "name": "Artifact",
+      "era": "Era",
+      "origin": "Origin",
+      "confidence": "Confidence",
+      "certainty": "Certainty",
+      "details": "Analysis details",
+      "agents": "AI Council",
+      "debate": "Debate",
+      "verdict": "Verdict",
+      "downloadReport": "Download report",
+      "newAnalysis": "New analysis",
+      "askAi": "Ask AI"
+    },
+    "chat": {
+      "title": "Ceramic AI Assistant",
+      "placeholder": "Ask anything...",
+      "send": "Send",
+      "thinking": "Thinking...",
+      "greeting": "Hello {{name}}.\nI'm your ceramic AI assistant. How can I help?"
+    }
+  },
+  "ceramics": {
+    "title": "Ceramic Lines Collection",
+    "subtitle": "Explore traditional Vietnamese and world ceramic lines.",
+    "searchPlaceholder": "Search by name, origin, style...",
+    "filterCountry": "Country",
+    "filterAll": "All",
+    "featured": "Featured",
+    "noResults": "No matching ceramic lines.",
+    "detail": {
+      "origin": "Origin",
+      "era": "Era",
+      "country": "Country",
+      "style": "Style",
+      "characteristics": "Characteristics",
+      "history": "History",
+      "techniques": "Techniques"
+    }
+  },
+  "history": {
+    "title": "Appraisal History",
+    "subtitle": "All AI analyses you have performed.",
+    "empty": "No analyses yet.",
+    "startNow": "Start an appraisal",
+    "table": {
+      "image": "Image",
+      "name": "Name",
+      "era": "Era",
+      "confidence": "Confidence",
+      "date": "Date",
+      "actions": "Actions"
+    },
+    "detail": {
+      "title": "Analysis details",
+      "uploadedAt": "Uploaded at",
+      "model": "AI model"
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "subtitle": "Manage account information and security.",
+    "tabs": {
+      "info": "Info",
+      "password": "Change password",
+      "billing": "Account"
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "avatar": "Avatar",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password"
+    },
+    "save": "Save changes",
+    "saved": "Saved successfully!",
+    "passwordChanged": "Password changed successfully!"
+  },
+  "payment": {
+    "title": "Top up Credits",
+    "subtitle": "Unlock the full power of multi-agent analysis.",
+    "steps": {
+      "package": "Choose package",
+      "method": "Method",
+      "pay": "Pay"
+    },
+    "credits": "Credits",
+    "perCredit": "{{price}}đ / credit",
+    "select": "Select",
+    "method": {
+      "title": "Payment method",
+      "vietqr": "Bank transfer",
+      "vietqrSub": "Auto-confirmed via VietQR",
+      "momo": "MoMo wallet",
+      "momoSub": "Instant payment",
+      "zalopay": "ZaloPay wallet",
+      "zalopaySub": "Scan or transfer instantly"
+    },
+    "qr": {
+      "title": "Scan VietQR",
+      "subtitle": "Use your banking / MoMo app",
+      "waiting": "Waiting for payment...",
+      "details": "Payment details",
+      "bank": "Bank",
+      "account": "Account",
+      "owner": "Account owner",
+      "content": "Content",
+      "confirm": "I have transferred",
+      "cancel": "Cancel transaction",
+      "simulate": "Simulate success (Test Mode)",
+      "warning": "Please keep the Transfer Content as-is so we can credit instantly. The order expires in 10 minutes."
+    },
+    "success": {
+      "title": "Payment successful!",
+      "msg": "You have credited {{credits}} analysis credits to your account. Start appraising your artifacts now!"
+    },
+    "total": "Total:",
+    "creating": "Creating order...",
+    "scanInvite": "Please scan the QR to pay!",
+    "checking": "Payment not received yet. Please retry in 30s!",
+    "failed": "The payment system is currently unavailable. Please try again later!"
+  },
+  "transactions": {
+    "title": "Transaction History",
+    "subtitle": "Track all your top-up transactions.",
+    "empty": "No transactions yet.",
+    "table": {
+      "id": "ID",
+      "package": "Package",
+      "amount": "Amount",
+      "credits": "Credits",
+      "status": "Status",
+      "date": "Date"
+    },
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "failed": "Failed"
+    }
+  },
+  "contact": {
+    "eyebrow": "The Archivist Concierge",
+    "title": "Contact us",
+    "subtitle": "We're always ready to listen and support your journey of discovering and preserving Vietnamese ceramic heritage.",
+    "info": {
+      "email": "Support Email",
+      "emailNote": "Detailed reply within 24 business hours.",
+      "emailCta": "Send email",
+      "phone": "Hotline",
+      "phoneNote": "Direct support Mon - Sat, 8:00 - 17:30.",
+      "phoneCta": "Call now",
+      "address": "Headquarters",
+      "addressValue": "Can Tho, Vietnam",
+      "addressNote": "Operations and support center for the Mekong Delta region.",
+      "addressCta": "Open in maps"
+    },
+    "form": {
+      "title": "Send a request",
+      "subtitle": "Fill in the details below and our consultants will reach out shortly.",
+      "name": "Full name *",
+      "namePh": "Enter your full name",
+      "email": "Email *",
+      "emailPh": "you@email.com",
+      "subject": "Subject",
+      "subjectPh": "Feedback, Appraisal, Partnership...",
+      "message": "Message *",
+      "messagePh": "Describe your request in detail...",
+      "submit": "Send request",
+      "sending": "Sending...",
+      "success": "Your request has been received successfully!",
+      "error": "Please complete required fields (*)",
+      "fail": "Failed to send. Please try again later."
+    },
+    "system": {
+      "title": "Our commitment",
+      "items": {
+        "ai": "Multi-perspective AI council",
+        "data": "National museum cross-checked data",
+        "speed": "Real-time analysis response",
+        "global": "Support for global cultural heritage"
+      }
+    },
+    "faq": {
+      "title": "Frequently asked",
+      "q1": "Is my artifact data secure?",
+      "a1": "We guarantee end-to-end encryption for all images and data.",
+      "q2": "How can I top up more credits?",
+      "a2": "Open the 'Top up' section in the menu to choose a package that fits your needs.",
+      "q3": "How can I reach you for partnership?",
+      "a3": "Email us directly or use the contact form with subject 'Partnership'. We'll respond within 48h."
+    }
+  },
+  "about": {
+    "eyebrow": "ABOUT THE ARCHIVIST",
+    "title": "Preserving heritage through AI",
+    "subtitle": "We pioneer multi-agent deep learning to recognize, appraise and digitize every trace of Vietnamese and global ceramic heritage.",
+    "features": {
+      "accuracy": {
+        "title": "Outstanding accuracy",
+        "desc": "Five specialized AI councils debate in real time, ensuring every origin and era judgment is multi-perspective."
+      },
+      "data": {
+        "title": "Vast data trove",
+        "desc": "Over 50,000 patterns, shapes and glazes spanning historic Eastern dynasties optimize matching and identification."
+      },
+      "community": {
+        "title": "Collector community",
+        "desc": "A knowledge playground for enthusiasts, archaeologists and ceramic experts. More than ML, The Archivist is a living archive of culture."
+      }
+    },
+    "mission": {
+      "title": "Our vision and",
+      "highlight": "mission",
+      "p1": "Every ceramic artifact is more than an object — it carries the story of time, the soul of nature, and the essence of the artisan's hand.",
+      "p2": "Our mission is to extend the lifespan of memory: bringing forgotten stories alive with logic, transparency and the extraordinary power of technology.",
+      "stats1": "Photos analyzed",
+      "stats2": "AI accuracy"
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "subtitle": "By using The Archivist, you agree to the following terms:",
+      "s1Title": "1. AI appraisal verdicts",
+      "s1Body": "While the system uses advanced multi-agent deep learning, all outputs are advisory. AI cannot replace authoritative or expert in-person assessment in legal, certification or commercial matters. Using the platform implies you understand all transactional decisions are within your personal jurisdiction.",
+      "s2Title": "2. Copyright and Data",
+      "s2Body": "You exclusively own the artifact images you upload. By analyzing samples, you grant us the right to use anonymized images to improve the AI. We do not redistribute your data to third parties.",
+      "s3Title": "3. Credits and Payment",
+      "s3Body": "Credits never expire. Successful top-ups are non-refundable except for payment-gateway failures.",
+      "s4Title": "4. User responsibilities",
+      "s4Body": "Accounts are for personal use only. Automation or reverse-engineering of the API will result in permanent access bans."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "Customer privacy is the top priority at The Archivist.",
+      "s1Title": "Personal data collection",
+      "s1Body": "We only collect your name, email and usage history (image analyses) to verify identity and maintain credit balance. Uploaded images are encrypted on internal servers.",
+      "s2Title": "Data usage",
+      "s2Items": [
+        "Process multi-agent AI requests for ceramic artifacts.",
+        "Display analysis logs on your personal interface.",
+        "Notify order progress (top-up packages).",
+        "Improve AI weights via anonymized images."
+      ],
+      "s3Title": "Payment transactions",
+      "s3Body": "We do not store card numbers, internet banking credentials or credit card details. All top-ups go through PCI-DSS-compliant gateways via VietQR and MoMo.",
+      "s4Title": "Contact and user rights",
+      "s4Body": "To request deletion of your personal history, including journal entries, contact The Archivist via 'Expert contact'. Your data will be permanently destroyed in compliance with GDPR."
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "subtitle": "Manage The Archivist platform",
+    "tabs": {
+      "dashboard": "Overview",
+      "users": "Users",
+      "ceramics": "Ceramic lines",
+      "payments": "Payments",
+      "predictions": "Predictions"
+    },
+    "stats": {
+      "users": "Users",
+      "predictions": "Predictions",
+      "ceramics": "Ceramic lines",
+      "revenue": "Revenue"
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "product": "Product",
+    "support": "Support",
+    "follow": "Follow",
+    "rights": "© {{year}} The Archivist. All rights reserved."
+  },
+  "errors": {
+    "network": "Network error",
+    "unauthorized": "Session expired",
+    "forbidden": "You don't have permission",
+    "notFound": "Not found",
+    "server": "Server error",
+    "validation": "Invalid data"
+  }
+}

@@ -1,0 +1,132 @@
+.auth-visual-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-visual-logo {
+  height: 120px;
+  margin-bottom: 40px;
+  filter: drop-shadow(0 4px 20px rgba(15, 38, 92, 0.15));
+}
+
+.auth-visual-title {
+  font-family: 'Lora', serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #0F265C;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.auth-visual-subtitle {
+  font-size: 1.25rem;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.auth-visual-tagline {
+  font-size: 0.95rem;
+  color: #9A6A4F;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  opacity: 0.8;
+}
+
+.auth-visual-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.auth-visual-feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.auth-visual-feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #D4AF37;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.auth-visual-feature-text {
+  flex: 1;
+}
+
+.auth-visual-feature-title {
+  font-weight: 700;
+  color: #0F265C;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.auth-visual-feature-desc {
+  font-size: 0.85rem;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.auth-visual-decoration {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.decoration-1 {
+  top: -100px;
+  left: -100px;
+}
+
+.decoration-2 {
+  bottom: -100px;
+  right: -100px;
+}
+
+@media (max-width: 1024px) {
+  .auth-visual-panel {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .auth-visual-panel {
+    padding: 60px 40px;
+  }
+
+  .auth-visual-logo {
+    height: 100px;
+    margin-bottom: 32px;
+  }
+
+  .auth-visual-title {
+    font-size: 3rem;
+  }
+
+  .auth-visual-subtitle {
+    font-size: 1.1rem;
+  }
+}

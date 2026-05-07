@@ -1,0 +1,117 @@
+/* AUTH LAYOUT - ISOLATED FULL SCREEN LAYOUT FOR AUTH PAGES ONLY */
+.auth-layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 9998;
+  background: #f7f1e8;
+}
+
+/* Aurora Background Layer */
+.auth-layout-aurora {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Decorative Grid Overlay */
+.auth-layout-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(rgba(15, 38, 92, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 38, 92, 0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+/* Glow Orbs */
+.auth-layout-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.auth-layout-glow-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #d4af37 0%, transparent 70%);
+  top: -200px;
+  right: -200px;
+  animation: auth-float-1 20s ease-in-out infinite;
+}
+
+.auth-layout-glow-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #0f265c 0%, transparent 70%);
+  bottom: -150px;
+  left: -150px;
+  animation: auth-float-2 25s ease-in-out infinite;
+}
+
+@keyframes auth-float-1 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -40px) scale(1.1);
+  }
+}
+
+@keyframes auth-float-2 {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 30px) scale(1.15);
+  }
+}
+
+/* Content Container */
+.auth-layout-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .auth-layout-content {
+    padding: 20px;
+  }
+}
+
+/* Custom scrollbar */
+.auth-layout-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.auth-layout-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.auth-layout-content::-webkit-scrollbar-thumb {
+  background: rgba(15, 38, 92, 0.2);
+  border-radius: 2px;
+}

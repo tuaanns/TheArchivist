@@ -15,4 +15,14 @@ class Pottery extends Model
         'confidence',
         'debate_data',
     ];
+
+    protected $casts = [
+        'debate_data' => 'array',
+        'confidence'  => 'float',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
