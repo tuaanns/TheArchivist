@@ -17,7 +17,7 @@ const TABS = [
   { id: 'password', icon: Lock },
 ];
 
-export const ProfilePage = ({ user, fetchUser, notify }) => {
+export const ProfilePage = ({ user, quota, fetchUser, notify }) => {
   const { t } = useTranslation();
   const [tab, setTab] = useState('info');
   const [form, setForm] = useState({
@@ -121,7 +121,7 @@ export const ProfilePage = ({ user, fetchUser, notify }) => {
     }
   };
 
-  const remainingFree = Math.max(0, (user?.free_limit ?? 0) - (user?.free_used ?? 0));
+  const remainingFree = Math.max(0, (quota?.free_limit ?? 5) - (quota?.free_used ?? 0));
 
   return (
     <PageContainer narrow>
