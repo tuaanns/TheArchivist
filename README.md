@@ -85,10 +85,76 @@ Vận hành **4 Terminal** cùng lúc:
 4.  **Web**: `npm start`
 
 ---
-test: flutter run -d chrome --web-port=63126
-## github
-git status
-git add.
+
+## 🌐 Triển Khai (Deployment)
+
+### Hạ Tầng Production
+
+| Service | Nền tảng | URL | Repo |
+|---------|----------|-----|------|
+| **Frontend** | Vercel | [thearchivistai.vercel.app](https://thearchivistai.vercel.app) | `tuaanns/gom-web` |
+| **Backend** | Azure App Service | [thearchivist-...azurewebsites.net](https://thearchivist-edemdeeaf4ahamgs.southeastasia-01.azurewebsites.net) | `tuaanns/Gom` (GitHub Actions) |
+| **Backup** | GitHub | — | `tuaanns/TheArchivist` |
+
+### 🚀 Deploy Nhanh (1 lệnh duy nhất)
+
+```powershell
+# Deploy tất cả với message mặc định
+.\deploy.ps1
+
+# Deploy với message tùy chỉnh
+.\deploy.ps1 -Message "Fix payment page"
+```
+
+Script `deploy.ps1` tự động thực hiện:
+1. ✅ Commit tất cả thay đổi
+2. ✅ Push lên `origin` → Azure backend auto-deploy
+3. ✅ Push lên `secondary` → Backup repo
+4. ✅ Sync `gom-web/` → repo `tuaanns/gom-web` → Vercel auto-deploy
+5. ✅ Dọn dẹp thư mục tạm
+
+### 📝 Deploy Thủ Công (từng bước)
+
+```bash
+# 1. Commit code
+git add .
 git commit -m "Update full system"
-git push origin main // nhánh 1
-git push secondary main // nhánh 2
+
+# 2. Push backend (Azure auto-deploy via GitHub Actions)
+git push origin main
+
+# 3. Push backup
+git push secondary main
+
+# 4. Sync frontend cho Vercel
+git clone --depth 1 https://github.com/tuaanns/gom-web.git temp-gom-web
+robocopy gom-web temp-gom-web /E /XD node_modules .git /XF .env /PURGE
+cd temp-gom-web
+git add -A && git commit -m "Sync updates" && git push origin main
+cd .. && rmdir /s /q temp-gom-web
+```
+
+### 🧪 Chạy Local (Development)
+
+Vận hành **4 Terminal** cùng lúc:
+
+| # | Service | Lệnh | Port |
+|---|---------|-------|------|
+| 1 | AI Engine | `uvicorn main:app --port 8001` | 8001 |
+| 2 | API Gate | `php artisan serve` | 8000 |
+| 3 | Mobile | `flutter run` hoặc `flutter run -d chrome --web-port=63126` | — |
+| 4 | Web | `npm run dev` | 5173 |
+
+---
+
+## 📂 Cấu Trúc Dự Án
+
+```
+Gom/
+├── gom-ai/          # 🧠 Python FastAPI - AI Debate Engine
+├── gom-api/         # 🚀 Laravel - Backend API + Auth + DB
+├── gom-web/         # 💻 React + Vite - Web Dashboard
+├── gom_app/         # 📱 Flutter - Mobile App
+├── deploy.ps1       # 🚀 One-click deploy script
+└── README.md
+```

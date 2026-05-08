@@ -93,7 +93,12 @@
     "heroTitle": "Khám phá di sản gốm sứ",
     "heroEyebrow": "Tranh biện AI đa đại lý",
     "heroPrefix": "Khám phá",
-    "heroRotatingWords": ["di sản", "tinh hoa", "kho tàng", "bảo vật"],
+    "heroRotatingWords": [
+      "di sản",
+      "tinh hoa",
+      "kho tàng",
+      "bảo vật"
+    ],
     "heroSuffix": "gốm sứ",
     "heroSubtitle": "Hệ thống AI đa đại lý phân tích chuyên sâu mọi cổ vật gốm sứ chỉ trong vài giây.",
     "ctaUpload": "Tải ảnh phân tích",
@@ -289,7 +294,7 @@
       "email": "Email Hỗ Trợ",
       "emailNote": "Phản hồi chi tiết trong vòng 24 giờ làm việc.",
       "emailCta": "Gửi email ngay",
-      "phone": "Đường Dây Nóng",
+      "phone": "Hotline hỗ trợ",
       "phoneNote": "Hỗ trợ trực tiếp từ Thứ 2 - Thứ 7, 8:00 - 17:30.",
       "phoneCta": "Gọi trực tiếp",
       "address": "Trụ Sở Chính",
